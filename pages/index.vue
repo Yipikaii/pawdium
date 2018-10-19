@@ -71,7 +71,7 @@ export default {
 	/* forest */
 	var forest = new THREE.Object3D();
 	var objectLoader = new THREE.ObjectLoader();		
-	objectLoader.load( "http://localhost:3000/models/trees/tree-1-fixed-3.json", function(obj) {
+	objectLoader.load( "models/trees/tree-1-fixed-3.json", function(obj) {
 		for (var i=0; i<8; i++) {
 			var tree = obj.clone();
 			tree.castShadow = true;
